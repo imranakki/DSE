@@ -1,2 +1,5 @@
 def div(a,b):
-    return a/b
+    try:
+        return a/b
+    except ZeroDivisionError:
+        return "Can't divide by zero"
